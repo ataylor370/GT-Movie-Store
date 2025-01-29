@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'GTMovieHub.apps.GtmoviehubConfig',
     'home',
+    'django.contrib.admin',
 ]
 
 MIDDLEWARE = [
