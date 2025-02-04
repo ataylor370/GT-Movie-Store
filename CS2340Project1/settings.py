@@ -128,5 +128,5 @@ STATIC_URL = 'static/'
 
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static", "CS2340Project1/../static"
+    BASE_DIR / "static", "CS2340Project1/static"
 ]
