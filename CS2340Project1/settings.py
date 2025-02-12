@@ -36,10 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'GTMovieHub.apps.GtmoviehubConfig',
     'home',
     'django.contrib.admin',
     'movies',
+    'accounts',
 ]
 
 MIDDLEWARE = [
@@ -79,14 +79,11 @@ WSGI_APPLICATION = 'CS2340Project1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'moviesstore',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 # Password validation
@@ -133,5 +130,5 @@ STATIC_URL = 'static/'
 
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static", "CS2340Project1/../static"
+    BASE_DIR / 'CS2340Project1/static/',
 ]
