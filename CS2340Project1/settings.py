@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.admin',
     'movies',
     'accounts',
+    'cart'
 ]
 
 MIDDLEWARE = [
